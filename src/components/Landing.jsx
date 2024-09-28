@@ -7,22 +7,22 @@ const Landing = () => {
                 />
             </div>
 
-            <div className="absolute top-0 w-full">
+            <div className="absolute top-0 w-full px-4 sm:px-16">
                 <div className="text w-max-screen-2xl h-full mx-auto px-5 sm:px-10 text-white">
-                    <div className="para mt-72 sm:mt-[35rem] text-lg sm:text-3xl">
+                    <div className="para mt-72 sm:mt-[35rem] sm:px-5 text-lg sm:text-3xl">
                         <p>Global digital design studio partnering</p>
                         <p>with brands and businesses that create</p>
                         <p> exceptional experiences where people </p>
                         <p>live, work, and unwind.</p>
                     </div>
 
-                    <div className="headings mt-5 sm:mt-10 text-6xl sm:text-[18rem] font-[400] sm:font-[350] tracking-tighter leading-none">
+                    <div className="headings mt-5 sm:mt-16 text-6xl sm:text-[15.5rem] font-medium tracking-tight leading-none">
                         <h1>Digital</h1>
                         <h1>Design</h1>
                         <h1>Experience</h1>
                     </div>
 
-                    <div className="para2 sm:w-1/3 mt-10 sm:mt-20 sm:text-xl">
+                    <div className="para2 sm:w-1/3 mt-10 sm:mt-20 sm:px-5 sm:text-xl">
                         <p>
                             We help experience-driven companies thrive by making their audience feel the refined intricacies of their brand
                             and product in the digital space. Unforgettable journeys start with a click.
@@ -37,6 +37,3 @@ const Landing = () => {
 }
 
 export default Landing;
-
-// hello@exoape.com
-// +31 772 086 200
