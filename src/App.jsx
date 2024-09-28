@@ -1,8 +1,12 @@
+import Navbar from "./components/Navbar";
+import Landing from "./components/Landing";
+
 const App = () => {
   return (
-    <>
-      <h1>Vite + React</h1>
-    </>
+    <div className="w-full">
+      <Navbar />
+      <Landing />
+    </div>
   )
 }
 
