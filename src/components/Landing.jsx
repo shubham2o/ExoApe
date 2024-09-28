@@ -1,9 +1,8 @@
 const Landing = () => {
     return (
-        <div className="relative w-full h-[150vh] sm:h-[250vh]">
+        <div className="relative w-full h-[135vh] sm:h-[250vh]">
             <div className="picture fixed w-full h-full">
-                <img
-                    src="https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)"
+                <img src="https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)"
                     className="w-full h-full object-cover"
                 />
             </div>
@@ -17,14 +16,17 @@ const Landing = () => {
                         <p>live, work, and unwind.</p>
                     </div>
 
-                    <div className="headings mt-5 sm:mt-10 text-6xl sm:text-[18rem] font-[350] tracking-tighter leading-none">
+                    <div className="headings mt-5 sm:mt-10 text-6xl sm:text-[18rem] font-[400] sm:font-[350] tracking-tighter leading-none">
                         <h1>Digital</h1>
                         <h1>Design</h1>
                         <h1>Experience</h1>
                     </div>
 
                     <div className="para2 sm:w-1/3 mt-10 sm:mt-20 sm:text-xl">
-                        <p>We help experience-driven companies thrive by making their audience feel the refined intricacies of their brand and product in the digital space. Unforgettable journeys start with a click.</p>
+                        <p>
+                            We help experience-driven companies thrive by making their audience feel the refined intricacies of their brand
+                            and product in the digital space. Unforgettable journeys start with a click.
+                        </p>
 
                         <a href="#" className="inline-block mt-10 border-b-[.3px] sm:border-b-[1px] border-zinc-100 pb-1">The Studio</a>
                     </div>
