@@ -4,6 +4,7 @@ import Work from "./components/Work";
 import PlayReel from "./components/PlayReel";
 import Media from "./components/Media";
 import Spread from "./components/Spread";
+import Story from "./components/Story";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <PlayReel />
       <Media />
       <Spread />
+      <Story />
     </div>
   )
 }
