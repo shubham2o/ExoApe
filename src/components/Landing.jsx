@@ -3,7 +3,7 @@ const Landing = () => {
         <div className="relative w-full h-[135vh] sm:h-[250vh]">
             <div className="picture fixed w-full h-full">
                 <img src="https://a.storyblok.com/f/133769/1920x2716/5c24d6b467/exo-ape-hero-1.jpg/m/2400x3395/filters:quality(90)"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-top"
                 />
             </div>
 

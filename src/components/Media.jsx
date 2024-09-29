@@ -1,7 +1,7 @@
 const Media = () => {
     return (
-        <div className="relative w-full h-[70vh] bg-white flex justify-center items-center overflow-hidden">
-            <div className="relative w-[42%] h-[47%]">
+        <div className="relative w-full h-[71vh] bg-white flex justify-center items-center overflow-hidden">
+            <div className="relative w-[42%] h-[48%]">
                 <div className="absolute -right-1/3 top-7 w-20 h-[7rem]">
                     <img src="https://a.storyblok.com/f/133769/348x494/21becfd449/home-news-3.jpg/m/1200x1703/filters:quality(90)" className="w-full h-full object-cover aspect-video" />
                 </div>
