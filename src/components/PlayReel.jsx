@@ -36,4 +36,3 @@ const PlayReel = () => {
 }
 
 export default PlayReel;
-
