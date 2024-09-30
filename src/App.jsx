@@ -1,3 +1,4 @@
+import LocomotiveScroll from 'locomotive-scroll';
 import Navbar from "./components/Navbar";
 import Landing from "./components/Landing";
 import Work from "./components/Work";
@@ -7,6 +8,8 @@ import Spread from "./components/Spread";
 import Story from "./components/Story";
 
 const App = () => {
+  const locomotiveScroll = new LocomotiveScroll();
+
   return (
     <div className="relative w-full font-['Satoshi']">
       <Navbar />
