@@ -11,7 +11,7 @@ const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
-    <div className="relative w-full font-['Satoshi']">
+    <div className="relative w-full font-['Satoshi'] scrollbar-none">
       <Navbar />
       <Landing />
       <Work />

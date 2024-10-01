@@ -1,10 +1,12 @@
+import { motion } from "framer-motion";
+import { Power4 } from "gsap";
 import { IoMenuSharp } from "react-icons/io5";
 
 const Navbar = () => {
     return (
         <div className="fixed w-full text-[#E0CCBB] font-semibold z-[999]">
-            <div className="max-w-screen-2xl h-20 sm:h-28 mx-auto px-5 sm:px-10 flex justify-between items-center">
-                <div className="logo">
+            <div className="max-w-screen-2xl h-20 sm:h-24 mx-auto px-5 sm:px-10 flex justify-between items-center">
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: Power4.easeInOut, duration: 1 }} className="logo">
                     <div className="wordmark">
                         <svg viewBox="0 0 95 25" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-20 sm:w-28">
                             <path fill="currentColor" d="M7.70542 17.0085C10.8808 17.2469 13.8123 15.2096 14.8524 12.0415H11.0216C10.4531 13.3929 9.1325 14.2151 7.73401 14.0885C5.56111 14.1223 3.7654 12.3119 3.7031 10.0246H15.1383V9.42253C15.1383 4.45554 12.9656 0.391646 7.64824 0.391646C5.56968 0.342653 3.56563 1.20734 2.11735 2.77806C0.66907 4.34878 -0.0925972 6.48364 0.0152567 8.66995C-0.119195 10.8796 0.639738 13.0461 2.10466 14.6345C3.56958 16.223 5.60394 17.0852 7.70542 17.0085ZM11.4473 7.22456H3.69995V7.16435C3.85008 4.98837 5.57318 3.30544 7.64509 3.31117C8.64896 3.27405 9.62348 3.67141 10.3418 4.41075C11.0601 5.15009 11.4596 6.16692 11.4473 7.22456Z"></path>
@@ -15,13 +17,15 @@ const Navbar = () => {
                             <path fill="currentColor" d="M82.6967 10.7163V9.93362C86.8705 8.75961 91.9878 7.19425 91.9878 3.5518C92.0462 2.61809 91.705 1.70579 91.0576 1.06484C90.4102 0.423885 89.5244 0.121481 88.643 0.240476C84.0117 0.240476 80.1523 5.5988 80.1523 10.7765C80.1523 13.7868 81.496 16.7971 84.8408 16.7971C87.1278 16.7971 88.9003 15.8338 91.0158 12.8235L90.3011 12.2214C89.2621 13.8114 87.6086 14.8363 85.7842 15.021C83.8688 15.021 82.6967 13.3353 82.6967 10.7163ZM89.5878 3.79273C89.5878 6.17087 87.3008 7.5255 82.8125 9.03065C83.3271 4.87644 85.5855 1.74573 87.8726 1.74573C88.3685 1.74602 88.8404 1.97044 89.1685 2.362C89.4966 2.75355 89.6493 3.27457 89.5878 3.79273Z"></path>
                         </svg>
                     </div>
-                </div>
+                </motion.div>
 
-                <span className="sm:hidden"><IoMenuSharp /></span>
+                <motion.span initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: Power4.easeInOut, duration: 1 }} className="sm:hidden -mt-2.5">
+                    <IoMenuSharp />
+                </motion.span>
 
-                <div className="links hidden sm:flex gap-10">
-                    {["Home", "About", "Pricing", "Contact"].map((item, index) => <a key={index} className=" font-[TWK_Lausanne]">{item}</a>)}
-                </div>
+                <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ ease: Power4.easeInOut, duration: 1 }} className="links hidden sm:flex gap-10 -mt-1.5">
+                    {["Home", "About", "Pricing", "Contact"].map((item, index) => <a key={index} className="font-[TWK_Lausanne]">{item}</a>)}
+                </motion.div>
             </div>
         </div>
     )

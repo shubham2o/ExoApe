@@ -1,7 +1,7 @@
 const Story = () => {
     return (
         <div className="relative w-full h-[39rem] sm:h-[130vh] px-8 sm:pl-32 bg-black text-[#E0CCBB]">
-            <div className="w-full sm:h-[70vh] pt-16 sm:pt-40 flex sm:gap-16">
+            <div className="w-full sm:h-[70vh] pt-16 sm:pt-40 flex sm:gap-16 overflow-hidden">
                 <div className="w-[28%] sm:w-auto text-7xl sm:text-[153.6px] sm:font-medium tracking-tight z-10">
                     <h1>Our</h1>
                     <h1>Story</h1>

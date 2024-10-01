@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { Power4 } from "gsap";
 import { useState } from "react";
 
 const Work = () => {
@@ -29,7 +31,7 @@ const Work = () => {
     ]);
 
     return (
-        <div className="relative w-full bg-white">
+        <div className="relative w-full sm:px-20 bg-white font-medium">
             <div className="max-w-screen-2xl mx-auto px-5 py-20 sm:px-10">
                 <div className="featured flex gap-2">
                     <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg" className="icon w-5">
@@ -40,7 +42,15 @@ const Work = () => {
                 </div>
 
                 <div>
-                    <h1 className="heading my-6 text-6xl sm:text-[15rem] tracking-tighter">Work</h1>
+                    <div className="heading my-6 text-6xl sm:text-[15rem] tracking-tighter">
+                        <motion.span initial={{ rotate: 90, y: "40%", opacity: 0 }} whileInView={{ rotate: 0, y: "0%", opacity: 1 }}
+                            transition={{ ease: [0.22, 1, 0.36, 1], duration: .8 }} viewport={{ once: true }}
+                            className="inline-block origin-left"
+                        >
+                            Work
+                        </motion.span>
+                    </div>
+
                     <p className="text-lg">Highlights of cases that we passionately built with forward-thinking clients and friends over the years.</p>
                 </div>
 
@@ -63,7 +73,7 @@ const Work = () => {
                     )}
                 </div>
             </div>
-        </div>
+        </div >
     )
 };
 
